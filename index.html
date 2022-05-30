@@ -13,16 +13,20 @@
 
 		<link rel="stylesheet" href="sass/main.css" />
 
-		<link
+		<!-- <link
 			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kristi&display=swap"
 			rel="stylesheet"
 		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Kristi&family=Poppins:wght@300;400;500;700&display=swap"
 			rel="stylesheet"
+		/> -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&family=Source+Code+Pro:ital,wght@0,300;0,500;0,600;0,700;1,600&display=swap"
+			rel="stylesheet"
 		/>
 		<script
-			src="https://kit.fontawesome.com/a27ebf18aa.js"
+			src="https://kit.fontawesome.com/d605aac350.js"
 			crossorigin="anonymous"
 		></script>
 
@@ -30,14 +34,17 @@
 	</head>
 
 	<body>
-		<header>
+		<!-- <header>
 			<h1>Hi! I'm ELIANA DOMINGUEZ</h1>
 			<h2>Front-End Developer - React JS</h2>
-		</header>
+		</header> -->
 
 		<div class="d-none d-md-inline col-12 col-lg-auto">
 			<nav id="navbar" class="navbar sticky-top">
 				<ul class="nav navbar-center">
+					<li class="nav-item">
+						<a href="#about" class="nav-link active">About me</a>
+					</li>
 					<li class="nav-item">
 						<a href="#projects" class="nav-link active">Projects</a>
 					</li>
@@ -71,6 +78,7 @@
 					</buttom>
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 						<div class="navbar-nav navbar-light bg-light">
+							<a href="#about" class="dropdown-item">About me</a>
 							<a href="#projects" class="dropdown-item">Projects</a>
 							<a href="#github" class="dropdown-item">GitHub</a>
 							<a href="#behance" class="dropdown-item">Behance</a>
@@ -88,239 +96,308 @@
 			class="scrollspy-example"
 			tabindex="0"
 		>
-			<div class="container">
-				<h4 class="title" id="projects">Here are some of my Projects</h4>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="https://weatherapp-elys.netlify.app/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/weather.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Weather App</h5>
-								<p class="card-text">
-									An application to check the weather in different cities. It is
-									made with React and calls an API that provides the weather
-									information. The form is validated and returns the current
-									temperature with a maximum and minimum.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="https://breakingbad-phrases-elys.netlify.app/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/breakingbad.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Breaking Bad Phrases App</h5>
-								<p class="card-text">
-									This App was made in React. When you press the button, a
-									phrase from the Breaking Bad series appears and it changes
-									each time you press the button. This happens by calling an
-									API.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="https://hairdresser-appointment-elys.netlify.app/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/hairdresser.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Hairdresser Appointment App</h5>
-								<p class="card-text">
-									This app was created with React. It contains form validation,
-									adds the appointments in a column next to it, and they can
-									then be removed. You can add as many appointments as you want
-									and they are saved in the local storage, so if you refresh the
-									page, no data is deleted.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="https://insurance-app-elys.netlify.app/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/insurance.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Car Insurance App</h5>
-								<p class="card-text">
-									This car insurance application is made with React. The result
-									of the form is based on the information provided by the user.
-									The form is validated. There is a spinner that simulates the
-									loading time of an API call. It is designed with Styled
-									Components.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="http://arteenmi.surge.sh/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/makeup.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Make Up Website</h5>
-								<p class="card-text">
-									A young and fresh website made with Javascript for an audience
-									that demands good photography and design. The website has a
-									carrousel, photo gallery using modal, a parallax effect in the
-									contact form background and an embedded video.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="https://weekly-budget-elys.netlify.app/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/budget.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Weekly Budget</h5>
-								<p class="card-text">
-									A budget control React Application. It has form validation
-									that only accepts numbers as budget. In this application you
-									define your budget, and then expenses can be entered. The
-									expenses are shown in a list. The remaining amount is updated
-									as expenses are being added, and it changes the color when you
-									are reaching the limit as a warning to the user.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href="http://chanar.surge.sh/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/chanar1.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Turism Website One</h5>
-								<p class="card-text">
-									This website was designed for a tourism company with an older
-									audience in mind. Institutional colors, visual appeal and ease
-									of use were taken into account. This website has two
-									carrousels, one for pictures and the other one for client's
-									opinion. It also has two parallax effects, one in the banner
-									at the begining and the other one in the contact form
-									background. Javascript was used for its construction.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a
-					class="card link mb-3"
-					style="max-width: 1200 px"
-					href=" http://chanareuropa.surge.sh/"
-				>
-					<div class="row g-0">
-						<div class="cont col-md-4">
-							<img src="img/chanar2.png" class="card-img-top" alt="..." />
-						</div>
-						<div class="cont col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Turism Website Two</h5>
-								<p class="card-text">
-									This website was the second part presented to the tourism
-									company. Institutional colors, visual appeal and ease of use
-									were again taken into account but it was made by Bootstraap
-									library. The original idea was to take it as an extension of
-									the first page where you would see more trips and part of the
-									blog with useful data. This part has a carrousel with images
-									and text. The pictures of the places to visit are made in the
-									style of Masonry Cards and a sticky navbar.
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<h4 id="github"></h4>
-			<a class="links" href="https://github.com/elysdominguez2">
-				<div class="card text-center text-white bg-dark">
-					<div class="card-body">
-						<p class="card-text">Would you like to see my repositories?</p>
-						<button type="button" class="btn btn-primary">GitHub</button>
+			<div class="encabezado">
+				<div class="fondo-codigo">
+					<div class="container">
+						<span class="grises">1 </span>
+						<span class="grises2"> //Hello world!</span>
 					</div>
 				</div>
-			</a>
+				<div class="container">
+					<span class="grises">2 </span>
+					<span class="celeste">I am Eliana</span>
+					<span class="rosas">=</span>
+					<span class="amarillo">&ltfrontend developer&gt</span>
+					<span class="amarillo">;</span>
+				</div>
+				<div class="fondo-codigo">
+					<div class="container">
+						<span class="grises">3 </span>
+						<span class="celeste">In love with</span>
+						<span class="amarillo">coding</span>
+						<span class="rosas">= true;</span>
+					</div>
+				</div>
+				<div class="container">
+					<span class="grises">4 </span>
+					<span class="rosas">Constantly</span>
+					<span class="celeste" id="about">learning;</span>
+					<i class="fa-solid fa-window-minimize fa-fade"></i>
+				</div>
 
-			<h4 id="behance"></h4>
-			<a class="links" href="https://www.behance.net/elysdoming1ebe">
+				<div class="about">
+					<h3>ABOUT ME</h3>
+					<h2 class="rosado2">I like to design and code</h2>
+					<h2 class="grises3">thoughtful digital User experiences &</h2>
+					<span class="grises4">beautiful</span>
+					<span class="purpura">websites.</span>
+					<h2 class="purpura2">I would love to work with You.</h2>
+					<a
+						class="boton"
+						href="https://www.linkedin.com/in/elianadominguez/"
+						target="_blank"
+						>HIRE ME</a
+					>
+				</div>
+
+				<div class="container">
+					<h4 class="title" id="projects">Here are some of my Projects</h4>
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="https://weatherapp-elys.netlify.app/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/weather.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Weather App</h5>
+									<p class="card-text">
+										An application to check the weather in different cities. It
+										is made with React and calls an API that provides the
+										weather information. The form is validated and returns the
+										current temperature with a maximum and minimum.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- <a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="https://breakingbad-phrases-elys.netlify.app/"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/breakingbad.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Breaking Bad Phrases App</h5>
+									<p class="card-text">
+										This App was made in React. When you press the button, a
+										phrase from the Breaking Bad series appears and it changes
+										each time you press the button. This happens by calling an
+										API.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a> -->
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="https://hairdresser-appointment-elys.netlify.app/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/hairdresser.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Hairdresser Appointment App</h5>
+									<p class="card-text">
+										This app was created with React. It contains form
+										validation, adds the appointments in a column next to it,
+										and they can then be removed. You can add as many
+										appointments as you want and they are saved in the local
+										storage, so if you refresh the page, no data is deleted.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="https://insurance-app-elys.netlify.app/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/insurance.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Car Insurance App</h5>
+									<p class="card-text">
+										This car insurance application is made with React. The
+										result of the form is based on the information provided by
+										the user. The form is validated. There is a spinner that
+										simulates the loading time of an API call. It is designed
+										with Styled Components.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="http://arteenmi.surge.sh/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/makeup.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Make Up Website</h5>
+									<p class="card-text">
+										A young and fresh website made with Javascript for an
+										audience that demands good photography and design. The
+										website has a carrousel, photo gallery using modal, a
+										parallax effect in the contact form background and an
+										embedded video.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="https://weekly-budget-elys.netlify.app/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/budget.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Weekly Budget</h5>
+									<p class="card-text">
+										A budget control React Application. It has form validation
+										that only accepts numbers as budget. In this application you
+										define your budget, and then expenses can be entered. The
+										expenses are shown in a list. The remaining amount is
+										updated as expenses are being added, and it changes the
+										color when you are reaching the limit as a warning to the
+										user.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href="http://chanar.surge.sh/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/chanar1.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Turism Website One</h5>
+									<p class="card-text">
+										This website was designed for a tourism company with an
+										older audience in mind. Institutional colors, visual appeal
+										and ease of use were taken into account. This website has
+										two carrousels, one for pictures and the other one for
+										client's opinion. It also has two parallax effects, one in
+										the banner at the begining and the other one in the contact
+										form background. Javascript was used for its construction.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="card link mb-3"
+						style="max-width: 1200 px"
+						href=" http://chanareuropa.surge.sh/"
+						target="_blank"
+					>
+						<div class="row g-0">
+							<div class="cont col-md-4">
+								<img src="img/chanar2.png" class="card-img-top" alt="..." />
+							</div>
+							<div class="cont col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Turism Website Two</h5>
+									<p class="card-text">
+										This website was the second part presented to the tourism
+										company. Institutional colors, visual appeal and ease of use
+										were again taken into account but it was made by Bootstraap
+										library. The original idea was to take it as an extension of
+										the first page where you would see more trips and part of
+										the blog with useful data. This part has a carrousel with
+										images and text. The pictures of the places to visit are
+										made in the style of Masonry Cards and a sticky navbar.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<h4 id="github"></h4>
+
 				<div class="card text-center text-white bg-dark">
 					<div class="card-body">
-						<p class="card-text">
+						<p class="card-text redes">
+							Would you like to see my repositories?
+						</p>
+						<a
+							class="boton2"
+							href="https://github.com/elysdominguez2"
+							target="_blank"
+							>GitHub</a
+						>
+					</div>
+				</div>
+
+				<h4 id="behance"></h4>
+
+				<div class="card text-center text-white bg-dark">
+					<div class="card-body">
+						<p class="card-text redes">
 							I have done some challenges and courses in Photoshop and these are
 							the projects that I did.
 						</p>
-						<button type="button" class="btn btn-primary">Behance</button>
+						<a
+							class="boton2"
+							href="https://www.behance.net/elysdoming1ebe"
+							target="_blank"
+							>Behance</a
+						>
 					</div>
 				</div>
-			</a>
-			<h4 id="linkedin"></h4>
-			<a class="links" href="https://www.linkedin.com/in/elianadominguez/">
+
+				<h4 id="linkedin"></h4>
+
 				<div class="card text-center text-white bg-dark">
 					<div class="card-body">
-						<p class="card-text">
+						<p class="card-text redes">
 							If you need more information about my studies and experience,
 							contact me.
 						</p>
-						<button type="button" class="btn btn-primary">LinkedIn</button>
+						<a
+							class="boton2"
+							href="https://www.linkedin.com/in/elianadominguez/"
+							target="_blank"
+							>LinkedIn</a
+						>
 					</div>
 				</div>
-			</a>
+			</div>
 		</main>
 
 		<footer class="sticky-bottom">

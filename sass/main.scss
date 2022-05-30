@@ -2,9 +2,11 @@ $primary: #fdc0b0;
 $secondary: #26b8c2;
 $dark: #000;
 $info: #ff9d8e;
+$grey: #848c97;
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Code Pro', monospace;
 	font-weight: 300;
 	background-color: $dark;
 }
@@ -18,30 +20,12 @@ h1 {
 	color: $info;
 }
 h2 {
-	color: $primary;
+	color: $grey;
 }
 
-nav {
-	background-color: $primary;
-
-	a {
-		color: $dark;
-	}
-}
 .navbar {
-	padding: 2rem;
+	background-color: $primary;
 }
-
-.navbar-center {
-	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
-}
-// .navbar-brand {
-// 	font-family: 'Amatic SC', cursive;
-// 	font-size: 50px;
-// 	padding-left: 3rem;
-// }
 
 a {
 	color: $primary;
@@ -53,8 +37,6 @@ a {
 }
 
 .nav-link {
-	// padding-right: 3rem;
-
 	color: $dark;
 	&:hover {
 		color: $secondary;
@@ -68,7 +50,7 @@ a {
 
 .card-title {
 	padding: 2rem;
-	// text-align: center;
+
 	text-transform: uppercase;
 }
 
@@ -80,33 +62,19 @@ p {
 }
 
 .card {
-	// text-align: center;
 	border: none;
-	// margin-bottom: 40px;
+
 	text-decoration: none;
-	// overflow: hidden;
 
 	h5 {
 		text-transform: uppercase;
 		font-weight: 300;
-
-		// &::before {
-		// 	content: '';
-		// 	display: block;
-		// 	width: 70px;
-		// 	height: 2px;
-		// 	background: $primary;
-		// 	margin: 15px auto 30px;
-		// }
 	}
 }
 .cont {
 	background-color: $dark;
 }
 
-// .embed-responsive .card-img-top {
-// 	object-fit: cover;
-// }
 .card-body {
 	background-color: $dark;
 	border-color: $dark;
